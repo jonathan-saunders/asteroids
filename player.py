@@ -32,7 +32,7 @@ class Player(CircleShape):
             pass
         else:
             self.cooldown = PLAYER_SHOOT_COOLDOWN
-            new_shot = Shot(self.position.x, self.position.y, SHOT_RADIUS)
+            new_shot = Shot(self.position.x, self.position.y)
             forward = pygame.Vector2(0, 1).rotate(self.rotation)
             new_shot.velocity = forward * PLAYER_SHOOT_SPEED
 
